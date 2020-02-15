@@ -3,6 +3,8 @@ sudo apt update
 sudo apt upgrade
 # Install essential utils
 sudo apt install -Y tmux vim git net-tools gtkterm htop ncdu tree zip tar okular owncloud-client
+# Setting up tmux conf based on currently deployed setup in COMROB lab
+cat tmux.conf >> ~/.tmux.conf
 # Install drawing and writing utils
 sudo apt install -Y inkscape gimp libreoffice
 # Install media related stuf
