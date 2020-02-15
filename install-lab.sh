@@ -1,4 +1,6 @@
 #!/bin/bash
+name="Jiri Kvant Kubik"
+email="jiri.kub@gmail.com"
 sudo apt update
 sudo apt upgrade
 # Install essential utils
@@ -17,9 +19,28 @@ sudo apt-get install google-chrome-stable
 # Install comrob related repositories
 mkdir comrob
 cd comrob/
+#TODO make following as function/separate script
+## clone robot deployment system
 git clone https://gitlab.fel.cvut.cz/bayerja1/robot_deployment_systems.git
+cd robot_deployment_system/
+git config user.email $email
+git config user.name $name
+cd ..
+
+## clone walking robot production
 git clone https://gitlab.fel.cvut.cz/bayerja1/walking_robots_production.git
-t clone https://gitlab.fel.cvut.cz/kubikji2/darpa-detection-gui
+cd walking_robots_prodution/
+git config user.email $email
+git config user.name $name
+cd ..
+
+## clone darpa detection gui
+git clone https://gitlab.fel.cvut.cz/kubikji2/darpa-detection-gui
+cd darpa-detection-gui/
+git config user.email $email
+git config user.name $name
+cd ..
+
 # installing ROS and stuff related to the robot deployment
 cd robot_deployment_systems/install_scripts/
 ./1_create_default_workspace.sh
