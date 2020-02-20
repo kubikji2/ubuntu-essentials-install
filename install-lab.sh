@@ -48,3 +48,6 @@ cd robot_deployment_systems/install_scripts/
 ./3_install_sensor_drivers.sh
 ./4_install_rds_autonomy.sh
 ./5_install_stdr.sh
+
+# adding aliases
+echo -e "alias rosnuke='rosnode kill -all'" >> ~/.bashrc
