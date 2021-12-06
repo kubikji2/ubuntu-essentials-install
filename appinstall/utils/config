@@ -1,0 +1,4 @@
+
+INSTALL_htop=1
+INSTALL_net_tools=1
+INSTALL_pandoc=1
