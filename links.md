@@ -1,6 +1,33 @@
 # Useful links
 
-Useful links to repositories, projects and programs not yet incorporated to the install scripts.
+The useful links to repositories, projects and programs that are not yet incorporated into the install scripts.
 
 - [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
 
+## Utils
+
+- **htop** - apt
+- **toilet** - apt
+- **dialog** - apt
+- **net-tools** - apt
+- **pandoc** - apt
+
+## TODO Comunications
+
+- [telegram]
+- [zoom]
+- [slack]
+- [msteams]
+- [caprine]
+
+## TODO Media
+
+- [vlc]
+- [gimp]
+- [inkscape]
+
+## TODO Development
+
+- [VSCode]
+
+## TODO 3Dprint
