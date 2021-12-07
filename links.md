@@ -19,6 +19,7 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - [slack]
 - [msteams]
 - [caprine]
+- [discord]
 
 ## TODO Media
 
@@ -31,3 +32,8 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - [VSCode]
 
 ## TODO 3Dprint
+
+- [PrusaSlicer]
+- [OpenScad]
+- [Netfabb]
+- [Fussion360]
