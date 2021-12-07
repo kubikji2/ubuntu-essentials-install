@@ -21,11 +21,12 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - **caprine** - snap
 - **discord** - snap
 
-## TODO Media
+## Media
 
-- [vlc]
-- [gimp]
-- [inkscape]
+- **vlc** - snap
+- **vlc_** - set vlc as default media player
+- **gimp** - snap
+- **inkscape** - add-apt-repo and apt, based on [link](https://inkscape.org/release/inkscape-1.0.2/gnulinux/ubuntu/ppa/dl/)
 
 ## TODO Development
 
