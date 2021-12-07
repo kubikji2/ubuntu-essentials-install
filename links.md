@@ -12,14 +12,14 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - **net-tools** - apt
 - **pandoc** - apt
 
-## TODO Comunications
+## Communications
 
-- [telegram]
-- [zoom]
-- [slack]
-- [msteams]
-- [caprine]
-- [discord]
+- **telegram** - snap
+- **zoom** - wget and apt, based on [link](https://linuxize.com/post/how-to-install-zoom-on-ubuntu-20-04/)
+- **slack** - snap
+- **msteams** - apt-key, based on [link](https://pureinfotech.com/install-microsoft-teams-linux/)
+- **caprine** - snap
+- **discord** - snap
 
 ## TODO Media
 
