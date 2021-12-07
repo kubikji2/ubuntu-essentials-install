@@ -25,7 +25,8 @@ do
     # bash variable aggregation based on:
     # https://stackoverflow.com/questions/917260/can-var-parameter-expansion-expressions-be-nested-in-bash#:~:text=export%20TEMP%3D%24%7BHELLO%7DWORLD%0Aecho%20%24%7B!TEMP%7D
     export TEMP=INSTALL_${cur_variable}
-    _cur_template="$cur_variable `(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`"
+    source $_path/$cur_variable/description
+    _cur_template="${cur_variable}:${description// /_} `(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`"
     # joining using: https://www.cyberciti.biz/faq/howto-linux-unix-bash-append-textto-variables/
     options="$options $_cur_template"
 done
@@ -59,4 +60,4 @@ done
 
 # '-> save new configuration
 #     '-> use citation marks to ensure newline characters as mentioned here: https://stackoverflow.com/questions/18535902/concatenating-two-string-variables-in-bash-appending-newline
-echo "$conf" > config
+echo "$conf" > $_path/config
