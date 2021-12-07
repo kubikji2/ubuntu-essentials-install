@@ -26,6 +26,8 @@ do
     # https://stackoverflow.com/questions/917260/can-var-parameter-expansion-expressions-be-nested-in-bash#:~:text=export%20TEMP%3D%24%7BHELLO%7DWORLD%0Aecho%20%24%7B!TEMP%7D
     export TEMP=INSTALL_${cur_variable}
     source $_path/$cur_variable/description
+    # replacing spaces in description by underscrolls is based on:
+    # https://stackoverflow.com/questions/19661267/replace-spaces-with-underscores-via-bash/19661428
     _cur_template="${cur_variable}:${description// /_} `(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`"
     # joining using: https://www.cyberciti.biz/faq/howto-linux-unix-bash-append-textto-variables/
     options="$options $_cur_template"
