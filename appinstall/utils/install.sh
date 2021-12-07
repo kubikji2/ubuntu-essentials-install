@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
-# run dialog
-source config
+# path to current directory
+_path=$(pwd)
+
+# if additional argument provided, use it as path
+if [ $# -eq 1 ];
+then
+    _path=$1
+fi
+
+# source config
+source $_path/config
 
 # get all variable in config
-variables=$(sed 's/=.*//' config)
+variables=$(sed 's/=.*//' $_path/config)
+
+echo $variables
 
 for cur_variable in $variables;
 do
@@ -17,11 +28,7 @@ do
         # https://stackoverflow.com/questions/4168371/how-can-i-remove-all-text-after-a-character-in-bash
         dir_name=$(echo "${cur_variable#*_}")
         toilet "Installing $dir_name"
-        bash ./$dir_name/install.sh
+        #bash $_path/$dir_name/install.sh
     fi
 done
-
-
-
-
 

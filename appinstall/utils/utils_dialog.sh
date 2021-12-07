@@ -2,13 +2,22 @@
 
 # heavily inspired by https://github.com/xpetresx/linux-setup/blob/master/user_dialog.sh
 
-# source variables from config
-source config
+# path to current directory
+_path=$(pwd)
+
+# if additional argument provided, use it as path
+if [ $# -eq 1 ];
+then
+    _path=$1
+fi
+
+# source config
+source $_path/config
 
 # create options for dialog cmd tool using template:
 # <variable-name> `(if [ ${variable-name} -eq 1 ]; then echo "on"; else echo "off"; fi)`
 # '-> get variable names first: remove everything after = and then remove INSTALL_ occurences
-variable_names=$(sed 's/=.*//' config | sed 's/INSTALL_*//')
+variable_names=$(sed 's/=.*//' $_path/config | sed 's/INSTALL_*//')
 # '-> iterate through the variables and compile the options
 options=""
 for cur_variable in $variable_names;
