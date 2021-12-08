@@ -4,11 +4,18 @@
 
 # path to current directory
 _path=$(pwd)
+_label="Install"
 
-# if additional argument provided, use it as path
-if [ $# -eq 1 ];
+# if path argument provided, use it as path
+if [ $# -ge 1 ];
 then
     _path=$1
+fi
+
+# if label argument provided, use it as lebel in dialog
+if [ $# -ge 2 ];
+then
+    _label=$2
 fi
 
 # source config
@@ -38,7 +45,7 @@ echo "$options"
 # create dialog window
 cmd=(dialog --stdout --no-items \
   --separate-output \
-  --ok-label "Install" \
+  --ok-label "${_label}" \
   --checklist "Choose configuration: hit space to mark option" 22 76 16)
 choices=$("${cmd[@]}" ${options})
 echo "${choices}"
