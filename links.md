@@ -35,7 +35,7 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## 3Dprint
 
-- PrusaSlicer
-- [OpenScad]
-- [Netfabb]
-- [Fussion360]
+- **PrusaSlicer** - snap
+- **OpenScad** - apt
+- **Netfabb** - wget from [Miro's repo]()
+- TODO: **Fussion360**
