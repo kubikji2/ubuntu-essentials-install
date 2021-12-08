@@ -2,7 +2,7 @@
 
 The useful links to repositories, projects and programs that are not yet incorporated into the install scripts.
 
-- [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
+- TODO [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
 
 ## Utils
 
