@@ -28,13 +28,14 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - **gimp** - snap
 - **inkscape** - add-apt-repo and apt, based on [link](https://inkscape.org/release/inkscape-1.0.2/gnulinux/ubuntu/ppa/dl/)
 
-## TODO Development
+## Development
 
-- [VSCode]
+- **VSCode** - snap
+- **Pycharm** - snap
 
-## TODO 3Dprint
+## 3Dprint
 
-- [PrusaSlicer]
+- PrusaSlicer
 - [OpenScad]
 - [Netfabb]
 - [Fussion360]
