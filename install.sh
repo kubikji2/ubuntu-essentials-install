@@ -3,6 +3,13 @@
 user_dialog="./appinstall/utils/user_dialog.sh"
 install_script="./appinstall/utils/install.sh"
 
+# first update system...
+sudo apt update
+sudo apt upgrade -y
+
+# ... and install dialog
+sudo apt install dialog toilet -y
+
 # first run dialog for categories
 $user_dialog $(pwd)/appinstall "SET"
 clear
@@ -78,4 +85,6 @@ do
         
     fi
 done
+
+
 

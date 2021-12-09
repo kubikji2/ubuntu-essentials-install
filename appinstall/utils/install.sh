@@ -28,7 +28,7 @@ do
         # https://stackoverflow.com/questions/4168371/how-can-i-remove-all-text-after-a-character-in-bash
         dir_name=$(echo "${cur_variable#*_}")
         toilet "Installing $dir_name"
-        #bash $_path/$dir_name/install.sh
+        bash $_path/$dir_name/install.sh
     fi
 done
 
