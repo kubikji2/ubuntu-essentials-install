@@ -15,7 +15,7 @@ source $_path/config
 # get all variable in config
 variables=$(sed 's/=.*//' $_path/config)
 
-echo $variables
+#echo $variables
 
 for cur_variable in $variables;
 do
