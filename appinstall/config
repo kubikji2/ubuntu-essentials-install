@@ -1,0 +1,6 @@
+
+INSTALL_media=1
+INSTALL_communications=1
+INSTALL_development=1
+INSTALL_utils=1
+INSTALL_3Dprint=0
