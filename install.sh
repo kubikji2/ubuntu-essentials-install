@@ -87,4 +87,15 @@ do
 done
 
 
+# add symlink to the tmux config
+# '-> based on: https://github.com/xpetresx/linux-setup
+APP_PATH=$(pwd)
+# symlink tmux settings
+rm ~/.tmux.conf
+ln -s $APP_PATH/conf/tmux.conf ~/.tmux.conf
+
+source ~/.bashrc
+
+# enable colors in terminal
+sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/g' ~/.bashrc
 
