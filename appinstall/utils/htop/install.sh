@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-sudo apt install htop -x 
+sudo apt install htop -y
+
+
