@@ -1,3 +1,4 @@
 
 INSTALL_pycharm=0
 INSTALL_vscode=1
+INSTALL_vscode_kvant_conf=0
