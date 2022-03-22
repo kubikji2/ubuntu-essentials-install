@@ -97,8 +97,9 @@ ln -s $APP_PATH/conf/tmux.conf ~/.tmux.conf
 # enable colors in terminal by uncommenting the particular line in bashrc
 sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/g' ~/.bashrc
 
-# eneable 256 colors for tmux
-echo '[ $TERM != "screen" ] && TERM=xterm-256color && exec tmux' >> ~/.bashrc
+# enable 256 colors for tmux
+# NOPE: this enforce autorun for tmux
+# echo '[ $TERM != "screen" ] && TERM=xterm-256color && exec tmux' >> ~/.bashrc
 
 # source .bashrc 
 source ~/.bashrc
