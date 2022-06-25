@@ -1,1 +1,4 @@
 
+INSTALL_netfabbb=0
+INSTALL_openscad=1
+INSTALL_prusaslicer=0
