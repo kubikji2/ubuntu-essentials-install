@@ -18,13 +18,32 @@ then
     _label=$2
 fi
 
+# TODO: improve testing in case of existing, but outdated conf file
+if test -f "$_path/config"; then
+    :
+else
+    echo "[ERROR] file $_path/config does not exist. fixing"
+    _dirs=$(ls $_path/*/ -d)
+    echo "$_dirs"
+    for dir in $_dirs;
+    do
+        # cutting off the slashes based on:
+        # https://stackoverflow.com/questions/4168371/how-can-i-remove-all-text-after-a-character-in-bash
+        _name=${dir%*/}
+        _name=${_name##*/}
+        echo "INSTALL_$_name=1" >> "$_path/config"
+    done
+fi
+
 # source config
 source $_path/config
+echo -e "[INFO-dialog] path is $_path"
 
 # create options for dialog cmd tool using template:
 # <variable-name> `(if [ ${variable-name} -eq 1 ]; then echo "on"; else echo "off"; fi)`
 # '-> get variable names first: remove everything after = and then remove INSTALL_ occurences
 variable_names=$(sed 's/=.*//' $_path/config | sed 's/INSTALL_*//')
+
 # '-> iterate through the variables and compile the options
 options=""
 for cur_variable in $variable_names;
@@ -33,7 +52,7 @@ do
     # https://stackoverflow.com/questions/917260/can-var-parameter-expansion-expressions-be-nested-in-bash#:~:text=export%20TEMP%3D%24%7BHELLO%7DWORLD%0Aecho%20%24%7B!TEMP%7D
     export TEMP=INSTALL_${cur_variable}
     source $_path/$cur_variable/description
-    echo -e "$_path/$cur_variable/description"
+    #echo -e "[INFO-dialog] path $_path/$cur_variable/description"
     # replacing spaces in description by underscrolls is based on:
     # https://stackoverflow.com/questions/19661267/replace-spaces-with-underscores-via-bash/19661428
     _cur_template="${cur_variable}_:_${description// /_} `(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`"
@@ -41,7 +60,7 @@ do
     options="$options $_cur_template"
 done
 
-echo "$options"
+#echo "[INFO-dialog] dialog options: $options"
 
 # create dialog window
 cmd=(dialog --stdout --no-items \

@@ -20,7 +20,7 @@ source ./appinstall/config
 # get all directories in appintstall
 directories=$(ls -d appinstall/*/)
 
-echo "dirs: $directories"
+#echo "[INFO] all dirs: $directories"
 
 # run dialogs for particular sections
 for directory in $directories;
@@ -40,7 +40,7 @@ do
     # if category is considered, run dialog
     if [ ${!TEMP} -eq 1 ];
     then
-        #echo -e "$_name/"
+        #echo -e "[INFO] running user dialog for: $_name/"
         #echo -e "$directories"
         #[ "$_name" == "utils" ];
         #echo $?
