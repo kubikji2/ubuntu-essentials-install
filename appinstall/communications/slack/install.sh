@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo snap install slack --classic
+sudo apt install slack -y
