@@ -7,8 +7,8 @@ install_script="./appinstall/utils/install.sh"
 sudo apt update
 sudo apt upgrade -y
 
-# ... and install dialog
-sudo apt install dialog toilet -y
+# ... and install dialog toilet and flatpack
+sudo apt install dialog toilet flatpak -y
 
 # first run dialog for categories
 $user_dialog $(pwd)/appinstall "SET"
