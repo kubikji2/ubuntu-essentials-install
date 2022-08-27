@@ -25,7 +25,7 @@ echo -e "[Desktop Entry]
 Version=2.4.2
 Type=Application
 Name=PrusaSlicer
-Comment=Slicer by Pruse Research
+Comment=Slicer by Prusa Research
 TryExec=$HOME/.local/bin/$name
 Exec=$HOME/.local/bin/$name
 Icon=$path/icon.png
