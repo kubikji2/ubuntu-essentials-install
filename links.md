@@ -37,5 +37,5 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 - **PrusaSlicer** - AppImage
 - **OpenScad** - AppImage
-- **Netfabb** - AppImage wget from [Miro's repo](https://github.com/3DprintFIT/netfabb-basic-download/releases)
+- **Netfabb** - pre-build via wget from [Miro's repo](https://github.com/3DprintFIT/netfabb-basic-download/releases)
 - TODO: **Fussion360**
