@@ -14,28 +14,28 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## Communications
 
-- **telegram** - snap
+- **telegram** - flatpak
 - **zoom** - wget and apt, based on [link](https://linuxize.com/post/how-to-install-zoom-on-ubuntu-20-04/)
-- **slack** - snap
+- **slack** - flatpak
 - **msteams** - apt-key, based on [link](https://pureinfotech.com/install-microsoft-teams-linux/)
-- **caprine** - snap
-- **discord** - snap
+- **caprine** - AppImage
+- **discord** - flatpak
 
 ## Media
 
-- **vlc** - snap
+- **vlc** - flatpak
 - **vlc_** - set vlc as default media player
-- **gimp** - snap
+- **gimp** - flatpak
 - **inkscape** - add-apt-repo and apt, based on [link](https://inkscape.org/release/inkscape-1.0.2/gnulinux/ubuntu/ppa/dl/)
 
 ## Development
 
-- **VSCode** - snap
+- **VSCode** - apt
 - **Pycharm** - snap
 
 ## 3Dprint
 
-- **PrusaSlicer** - snap
-- **OpenScad** - apt
-- **Netfabb** - wget from [Miro's repo](https://github.com/3DprintFIT/netfabb-basic-download/releases)
+- **PrusaSlicer** - AppImage
+- **OpenScad** - AppImage
+- **Netfabb** - AppImage wget from [Miro's repo](https://github.com/3DprintFIT/netfabb-basic-download/releases)
 - TODO: **Fussion360**
