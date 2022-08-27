@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 target="$HOME/.Apps"
-path=$target"/prusa-slicer"
+path=$target"/prusaslicer"
 
 # make Apps directory
 mkdir -p $target
