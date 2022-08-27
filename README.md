@@ -13,9 +13,9 @@ Install scripts for essential programs on Ubuntu.
 
 ## TODOs
 
-- [ ] Remove snap completely
-- [ ] Add directory `.apps` (or so) to store *AppImages*, link installed apps to `~/.local/bin`
-  - [ ] Add execution rights `chmod a+x exampleName.AppImage`
+- [x] Remove snap completely
+- [X] Add directory `.Apps` (or so) to store *AppImages*, link installed apps to `~/.local/bin`
+  - [X] Add execution rights `chmod a+x exampleName.AppImage`
 - [ ] Allow a user to select between apt and flatpack [[link]](https://docs.flatpak.org/en/latest/using-flatpak.html)
 - [ ] Add flatpack alternatives
 - [ ] Add a tutorial on how to install
