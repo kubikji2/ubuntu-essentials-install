@@ -8,6 +8,8 @@ Install scripts for essential programs on Ubuntu.
 - [ ] Master pdf
 - [ ] pdftk
 - [ ] youtube-dl from apt
+- [ ] Unity
+- [ ] Blender
 
 ## TODOs
 
