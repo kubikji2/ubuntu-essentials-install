@@ -3,5 +3,6 @@
 # set 
 flatpak install flathub org.telegram.desktop -y
 
-# setup alias
-echo "alias telegram='flatpak run org.telegram.desktop'" >> $HOME/.bashrc
+# add entry to ~/.local/bin
+echo "flatpak run org.telegram.desktop" >> $HOME"/.local/bin/telegram"
+chmod +x $HOME"/.local/bin/telegram"
