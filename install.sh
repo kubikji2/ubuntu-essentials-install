@@ -10,6 +10,20 @@ sudo apt upgrade -y
 # ... and install dialog toilet and flatpack
 sudo apt install dialog toilet flatpak -y
 
+# create directory for the AppImages, repositories etc
+mkdir -p $HOME"/.Apps"
+# creating ~/.local
+mkdir -p $HOME"/.local"
+# creating ~/.local/bin
+mkdir -p $HOME"/.local/bin"
+
+# make sure that ~/.local/bin is added to the PATH in the .profile
+grep $HOME/.profile -Pzoe 'if \[ -d \"\$HOME/.local/bin\" \] ; then*\n[ ]*PATH=\"\$HOME/\.local/bin\:\$PATH\"[ ]*\nfi' >> /dev/null
+# if there is no such entry, just add it to the .profile
+if [ $? -ne 0 ] ; then
+    echo -e "if [ -d \"\$HOME/.local/bin\" ] ; then \n    PATH=\"\$HOME/.local/bin:\$PATH\" \nfi" >> $HOME/.profile
+fi
+
 # first run dialog for categories
 $user_dialog $(pwd)/appinstall "SET"
 clear
