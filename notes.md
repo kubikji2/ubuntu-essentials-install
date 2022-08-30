@@ -6,7 +6,7 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## 3Dprint
 
-- [ ] TODO: **Fussion360** from obscure reop
+- [ ] TODO: **Fussion360** from [obscure repo](https://github.com/cryinkfly/Autodesk-Fusion-360-for-Linux)
 - **Netfabb** - pre-build via wget from [Miro's repo](https://github.com/3DprintFIT/netfabb-basic-download/releases)
 - **OpenScad** - AppImage
 - **PrusaSlicer** - AppImage
