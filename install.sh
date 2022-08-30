@@ -9,6 +9,10 @@ sudo apt upgrade -y
 
 # ... and install dialog toilet and flatpack
 sudo apt install dialog toilet flatpak -y
+# add flathub repository
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# add flatpak to environment variables
+XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak/exports/share
 
 # create directory for the AppImages, repositories etc
 mkdir -p $HOME"/.Apps"
