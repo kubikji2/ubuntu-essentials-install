@@ -1,4 +1,4 @@
-# Useful links
+# Used Sources and Knowledge Base
 
 The useful links to repositories, projects and programs that are not yet incorporated into the install scripts.
 
@@ -17,6 +17,7 @@ The useful links to repositories, projects and programs that are not yet incorpo
 - **telegram** - flatpak
 - **zoom** - wget and apt, based on [link](https://linuxize.com/post/how-to-install-zoom-on-ubuntu-20-04/)
 - **slack** - flatpak
+  - see [GitHub issues](https://github.com/flathub/com.slack.Slack/issues/168) for fixing broken commits
 - **msteams** - apt-key, based on [link](https://pureinfotech.com/install-microsoft-teams-linux/)
 - **caprine** - AppImage
 - **discord** - flatpak
