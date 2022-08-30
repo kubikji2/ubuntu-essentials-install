@@ -10,6 +10,7 @@ Install scripts for essential programs on Ubuntu.
 - [ ] youtube-dl from apt
 - [ ] Unity
 - [ ] Blender
+- [ ] Fussion360
 
 ## Roadmap
 
