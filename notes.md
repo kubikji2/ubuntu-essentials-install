@@ -2,8 +2,6 @@
 
 The useful links to repositories, projects and programs that are not yet incorporated into the install scripts.
 
-- TODO [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
-
 ## 3Dprint
 
 - [ ] TODO: **Fussion360** from [obscure repo](https://github.com/cryinkfly/Autodesk-Fusion-360-for-Linux)

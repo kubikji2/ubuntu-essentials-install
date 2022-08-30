@@ -11,6 +11,7 @@ Install scripts for essential programs on Ubuntu.
 - [ ] Unity
 - [ ] Blender
 - [ ] Fussion360
+- [ ] [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
 
 ## Roadmap
 
