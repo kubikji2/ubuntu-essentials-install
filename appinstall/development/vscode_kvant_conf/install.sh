@@ -7,4 +7,4 @@ then
     path=$1
 fi
 
-cat $path"/vscode-extensions.conf" | xargs -L 1 code --install-extension
+cat $path"/vscode-extensions.conf" | xargs -L 1
