@@ -21,7 +21,7 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## Development
 
-- **Pycharm** - snap
+- **jetbrain-toolbox** - something like appimage
 - **VSCode** - apt
 
 ## Media

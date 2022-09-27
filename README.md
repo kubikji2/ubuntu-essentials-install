@@ -8,7 +8,7 @@ Install scripts for essential programs on Ubuntu.
 - [ ] Master pdf
 - [ ] pdftk
 - [ ] youtube-dl from apt
-- [ ] Unity
+- [ ] UnityHub
 - [ ] Blender
 - [ ] Fussion360
 - [ ] [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
@@ -19,7 +19,9 @@ Install scripts for essential programs on Ubuntu.
 - [X] Add directory `.Apps` (or so) to store *AppImages*, link installed apps to `~/.local/bin`
   - [X] Add execution rights `chmod a+x exampleName.AppImage`
   - [x] Add AppImages to the desktop using [[this]](https://codebysamgan.com/how-to-add-appimage-application-to-menu-in-ubuntu-linux)
-- [ ] Remove snap from PyCharm
+- [x] Remove snap from PyCharm
+  - replaced by jetbrains toolbox
+- [x] the spaces in install-scripts fixed 
 - [ ] Add a tutorial on how to install
   - [ ] Explicitly state that during Ubuntu installation, your computer should always be connected through the ethernet to the internet and always install proprietary drivers.
 - [ ] Add a tutorial how to add packages
