@@ -45,7 +45,6 @@ echo -e "[INFO-dialog] path is $_path"
 variable_names=$(sed 's/=.*//' $_path/config | sed 's/INSTALL_*//')
 
 # '-> iterate through the variables and compile the options
-options=""
 for cur_variable in $variable_names;
 do 
     # bash variable aggregation based on:
@@ -55,19 +54,22 @@ do
     #echo -e "[INFO-dialog] path $_path/$cur_variable/description"
     # replacing spaces in description by underscrolls is based on:
     # https://stackoverflow.com/questions/19661267/replace-spaces-with-underscores-via-bash/19661428
-    _cur_template="${cur_variable}_:_${description// /_} `(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`"
-    # joining using: https://www.cyberciti.biz/faq/howto-linux-unix-bash-append-textto-variables/
-    options="$options $_cur_template"
+    #_cur_template=("$n" "${cur_variable} ${description// /_}" "`(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`")
+    
+    # based on: https://stackoverflow.com/questions/16986766/spaces-in-bash-dialog
+    # joined using arrays probably, do not know, do not care
+    options+=( "${cur_variable}: ${description}" "`(if [ ${!TEMP} -eq 1 ]; then echo "on"; else echo "off"; fi)`" )
+    #echo "${options[@]}"
 done
 
-#echo "[INFO-dialog] dialog options: $options"
+echo "[INFO-dialog] dialog options: ${options[@]}"
 
 # create dialog window
 cmd=(dialog --stdout --no-items \
   --separate-output \
   --ok-label "${_label}" \
   --checklist "Choose configuration: hit space to mark option" 22 76 16)
-choices=$("${cmd[@]}" ${options})
+choices=$("${cmd[@]}" "${options[@]}")
 echo "${choices}"
 
 # create new config file
