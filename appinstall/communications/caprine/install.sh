@@ -17,7 +17,7 @@ chmod +x $fn
 # move it to the target location
 mv $fn $path
 # create a link to ~/.local/bin 
-ln -s $path"/"$fn $HOME"/.local/bin/"$name
+ln -fs $path"/"$fn $HOME"/.local/bin/"$name
 
 # coppy icon to the .App/ directory
 cp icon.png $path 

@@ -10,10 +10,11 @@ sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 # clean up
 rm -f packages.microsoft.gpg
-# install additional stuff
 
+# install additional stuff
 sudo apt install apt-transport-https
+
 # update dependencies
 sudo apt update
-# instlal code
+# install code
 sudo apt install code

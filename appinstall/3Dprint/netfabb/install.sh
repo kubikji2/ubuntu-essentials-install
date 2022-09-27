@@ -18,7 +18,7 @@ mv $path/*/* $path/
 # make netfabb runable
 chmod +x $path"/netfabb_free"
 # create a link to ~/.local/bin 
-ln -s $path"/netfabb_free" $HOME"/.local/bin/"$name
+ln -fs $path"/netfabb_free" $HOME"/.local/bin/"$name
 # clean up
 rm $fn
 
