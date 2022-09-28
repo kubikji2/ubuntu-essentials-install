@@ -9,5 +9,5 @@ XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak
 sudo flatpak install flathub org.telegram.desktop -y
 
 # add entry to ~/.local/bin
-echo "flatpak run org.telegram.desktop" >> $HOME"/.local/bin/telegram"
+echo "flatpak run org.telegram.desktop" > $HOME"/.local/bin/telegram"
 chmod +x $HOME"/.local/bin/telegram"

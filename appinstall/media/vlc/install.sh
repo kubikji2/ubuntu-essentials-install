@@ -9,5 +9,5 @@ XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak
 sudo flatpak install flathub org.videolan.VLC -y
 
 # add entry to ~/.local/bin
-echo "flatpak run org.videolan.VLC" >> $HOME"/.local/bin/vlc"
+echo "flatpak run org.videolan.VLC" > $HOME"/.local/bin/vlc"
 chmod +x $HOME"/.local/bin/vlc"

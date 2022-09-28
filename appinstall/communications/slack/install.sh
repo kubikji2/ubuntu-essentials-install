@@ -12,5 +12,5 @@ sudo flatpak install flathub com.slack.Slack -y
 sudo flatpak update --commit='e42dd12ad288509cb4c7f94c7a370f9c72f7ddf03b202fbe3c2a7c9f6979b249' com.slack.Slack
 
 # add entry to ~/.local/bin
-echo "flatpak run com.slack.Slack" >> $HOME"/.local/bin/slack"
+echo "flatpak run com.slack.Slack" > $HOME"/.local/bin/slack"
 chmod +x $HOME"/.local/bin/slack"

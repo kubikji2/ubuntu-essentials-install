@@ -10,5 +10,5 @@ XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak
 sudo flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref -y
 
 # add entry to ~/.local/bin
-echo "flatpak run org.gimp.GIMP//stable" >> $HOME"/.local/bin/gimp"
+echo "flatpak run org.gimp.GIMP//stable" > $HOME"/.local/bin/gimp"
 chmod +x $HOME"/.local/bin/gimp"

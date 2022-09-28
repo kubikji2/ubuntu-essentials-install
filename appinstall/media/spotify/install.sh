@@ -9,5 +9,5 @@ XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak
 sudo flatpak install flathub com.spotify.Client -y
 
 # add entry to ~/.local/bin
-echo "flatpak run com.spotify.Client" >> $HOME"/.local/bin/spotify"
+echo "flatpak run com.spotify.Client" > $HOME"/.local/bin/spotify"
 chmod +x $HOME"/.local/bin/spotify"

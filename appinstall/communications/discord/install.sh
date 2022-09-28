@@ -9,5 +9,5 @@ XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak
 sudo flatpak install flathub com.discordapp.Discord -y
 
 # add entry to ~/.local/bin
-echo "flatpak run com.discordapp.Discord" >> $HOME"/.local/bin/discord"
+echo "flatpak run com.discordapp.Discord" > $HOME"/.local/bin/discord"
 chmod +x $HOME"/.local/bin/discord"
