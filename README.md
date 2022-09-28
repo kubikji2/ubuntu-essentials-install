@@ -2,7 +2,7 @@
 
 Install scripts for essential programs on Ubuntu.
 
-## Programs to add
+## Programs to add and stuff to fix
 
 - [ ] Foxit reader
   - Abandodned, not easy way how to script this one out
@@ -12,8 +12,9 @@ Install scripts for essential programs on Ubuntu.
 - [x] youtube-dl from apt
 - [x] [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
 - [x] ulozto downloader
-- [ ] UnityHub
-- [ ] Blender
+- [x] UnityHub
+- [x] Blender
+- [x] add user to the docker group without need to logout (very optional)
 - [ ] Fussion360
 
 ## Roadmap

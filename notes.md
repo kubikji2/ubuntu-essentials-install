@@ -21,13 +21,18 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## Development
 
+- **docker** - apt image using own repo, based on [link](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 - **jetbrain-toolbox** - something like appimage
+- **UnityHUB** - AppImage (probably upto date)
 - **VSCode** - apt
 
 ## Media
 
+- **blender** - flatpak
 - **gimp** - flatpak
 - **inkscape** - add-apt-repo and apt, based on [link](https://inkscape.org/release/inkscape-1.0.2/gnulinux/ubuntu/ppa/dl/)
+- **obs** - apt with custom repository
+- **spotify** - flatpak
 - **vlc** - flatpak
 - **vlc_** - set vlc as default media player
 
