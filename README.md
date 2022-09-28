@@ -5,13 +5,16 @@ Install scripts for essential programs on Ubuntu.
 ## Programs to add
 
 - [ ] Foxit reader
+  - Abandodned, not easy way how to script this one out
 - [ ] Master pdf
-- [ ] pdftk
-- [ ] youtube-dl from apt
+  - direct download link here: https://code-industry.net/public/master-pdf-editor-5.8.70-qt5.x86_64.deb
+- [x] pdftk
+- [x] youtube-dl from apt
+- [x] [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
+- [x] ulozto downloader
 - [ ] UnityHub
 - [ ] Blender
 - [ ] Fussion360
-- [ ] [FlameShot](https://github.com/flameshot-org/flameshot) screenshots on steriods.
 
 ## Roadmap
 
@@ -28,4 +31,5 @@ Install scripts for essential programs on Ubuntu.
 
 ### Additional features ideas
 
-- Add flatpack alternatives to allow a user to select between apt and flatpack [[link]](https://docs.flatpak.org/en/latest/using-flatpak.html)
+- ~~Add flatpack alternatives to allow a user to select between apt and flatpack [[link]](https://docs.flatpak.org/en/latest/using-flatpak.html)~~
+  - Rejected since most of the software is flatpack-only for the most recent releases

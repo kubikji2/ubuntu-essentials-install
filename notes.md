@@ -33,8 +33,12 @@ The useful links to repositories, projects and programs that are not yet incorpo
 
 ## Utils
 
-- **htop** - apt
-- **toilet** - apt
 - **dialog** - apt
+- **flameshot** - apt
+- **htop** - apt
 - **net-tools** - apt
 - **pandoc** - apt
+- **pdftk** - apt
+- **toilet** - apt
+- **ulozto-downloader** - various [see](https://github.com/setnicka/ulozto-downloader)
+- **youtube-dl** - apt
