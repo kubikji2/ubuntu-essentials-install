@@ -4,3 +4,4 @@ INSTALL_docker_add_user=0
 INSTALL_jetbrains_toolbox=1
 INSTALL_vscode=1
 INSTALL_vscode_kvant_conf=1
+INSTALL_vscode_dotnet_sdk=0
