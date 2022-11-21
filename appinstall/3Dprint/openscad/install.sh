@@ -26,7 +26,7 @@ echo -e "[Desktop Entry]
 Version=2021.01
 Type=Application
 Name=OpenSCAD
-Comment=free software application for creating solid 3D computer-aided design objects.
+Comment=Free software application for creating solid 3D computer-aided design objects.
 TryExec=$HOME/.local/bin/$name
 Exec=$HOME/.local/bin/$name
 Icon=$path/icon.png
