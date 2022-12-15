@@ -16,6 +16,7 @@ Install scripts for essential programs on Ubuntu.
 - [x] Blender
 - [x] add user to the docker group without need to logout (very optional)
 - [ ] install timeshift for system snapshots: `sudo apt install timeshift`
+- [ ] fstl - lightway stl preview - using apt install
 - [ ] Fussion360
 
 ## Roadmap
