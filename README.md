@@ -18,6 +18,7 @@ Install scripts for essential programs on Ubuntu.
 - [ ] install timeshift for system snapshots: `sudo apt install timeshift`
 - [ ] fstl - lightway stl preview - using apt install
 - [ ] Fussion360
+- [ ] Acrobat Reader based on [this tutorial](https://linuxconfig.org/how-to-install-adobe-acrobat-reader-on-ubuntu-20-04-focal-fossa-linux)
 
 ## Roadmap
 
