@@ -4,7 +4,7 @@ target="$HOME/.Apps"
 name="prusaslicer"
 path=$target"/"$name
 # MODIFY THIS UPON NEW RELEASE
-version="2_5_0"
+version="2_5_1"
 version_dots=${version//"_"/"."}
 
 # make Apps directory
@@ -15,7 +15,7 @@ mkdir -p $path
 # download the appimage
 wget https://cdn.prusa3d.com/downloads/drivers/prusa3d_linux_$version.zip
 # unzip it to
-unzip "prusa3d_linux_"$version -d $path
+unzip -j "prusa3d_linux_"$version -d $path
 # make both prusaslicers GTK versions runable
 chmod +x $path/PrusaSlicer*
 # make link to the .local/bin
