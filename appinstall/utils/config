@@ -8,3 +8,4 @@ INSTALL_pdftk=1
 INSTALL_ulozto_downloader=0
 INSTALL_youtube_dl=0
 INSTALL_flatpakautoupdate=1
+INSTALL_midnight_commander=1
