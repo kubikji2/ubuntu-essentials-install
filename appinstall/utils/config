@@ -10,3 +10,4 @@ INSTALL_youtube_dl=0
 INSTALL_flatpakautoupdate=1
 INSTALL_midnight_commander=1
 INSTALL_guake=0
+INSTALL_timeshift=1
