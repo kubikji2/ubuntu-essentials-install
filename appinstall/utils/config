@@ -1,11 +1,11 @@
 
-INSTALL_htop=0
-INSTALL_net_tools=0
-INSTALL_pandoc=0
-INSTALL_etcher=0
-INSTALL_flameshot=0
-INSTALL_pdftk=0
+INSTALL_htop=1
+INSTALL_net_tools=1
+INSTALL_pandoc=1
+INSTALL_etcher=1
+INSTALL_flameshot=1
+INSTALL_pdftk=1
 INSTALL_ulozto_downloader=0
 INSTALL_youtube_dl=0
-INSTALL_flatpakautoupdate=0
+INSTALL_flatpakautoupdate=1
 INSTALL_midnight_commander=1
