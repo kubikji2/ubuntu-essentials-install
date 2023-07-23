@@ -30,8 +30,14 @@ ln -fs $path/$name "$HOME/.local/bin/"$name
 # clean up archive
 rm -f $_filename
 
-# coppy icon to the .App/ directory
-cp icon.png $path 
+# adding icon
+# getting script absolute dir path
+# loosely based on: https://linuxhint.com/absolute-path-script-bash/
+script_path=$(realpath "${BASH_SOURCE:-$0}")
+script_dir=$(dirname $script_path)
+# copy icon to the .App/ directory
+cp $script_dir/icon.png $path
+
 # creating entry in the menu and enabling adding to favourite
 echo -e "[Desktop Entry]
 Version=1.26.0
