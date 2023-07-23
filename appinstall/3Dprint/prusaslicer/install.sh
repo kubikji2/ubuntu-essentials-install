@@ -23,8 +23,14 @@ ln -fs $path/PrusaSlicer*linux-x64-GTK3*.AppImage "$HOME/.local/bin/"$name
 # clean up
 rm prusa3d_linux_$version.zip 
 
-# coppy icon to the .App/ directory
-cp icon.png $path 
+# adding icon
+# getting script absolute dir path
+# loosely based on: https://linuxhint.com/absolute-path-script-bash/
+script_path=$(realpath "${BASH_SOURCE:-$0}")
+script_dir=$(dirname $script_path)
+# copy icon to the .App/ directory
+cp $script_dir/icon.png $path
+
 # creating entry in the menu and enabling adding to favourite
 echo -e "[Desktop Entry]
 Version=2.4.2
