@@ -19,7 +19,7 @@ chmod +x $fn
 # move it to the target location
 mv $fn $path
 # create a link to ~/.local/bin 
-ln -fs $path"/"$fn_template $HOME"/.local/bin/"$name
+ln -fs $path"/"$fn $HOME"/.local/bin/"$name
 
 # adding icon
 # getting script absolute dir path
