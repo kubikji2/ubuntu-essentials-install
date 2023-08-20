@@ -31,7 +31,7 @@ chmod +x $target/run.sh
 # adding shebang to the run script
 echo -e "#!/usr/bin/env bash" > $target/run.sh
 # plcing execution command
-echo -e "wine .wine/drive_c/Program\ Files/AnycubicPhotonWorkshop/AnycubicPhotonWorkshop.exe" >> $target/run.sh
+echo -e "wine $HOME/.wine/drive_c/Program\ Files/AnycubicPhotonWorkshop/AnycubicPhotonWorkshop.exe" >> $target/run.sh
 
 # creating symlink to the local bin
 ln -sf $target/run.sh "$HOME/.local/bin/"$name
