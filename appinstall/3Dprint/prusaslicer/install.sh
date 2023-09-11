@@ -4,7 +4,7 @@ target="$HOME/.Apps"
 name="prusaslicer"
 path=$target"/"$name
 # MODIFY THIS UPON NEW RELEASE
-version="2_6_0"
+version="2_6_1"
 version_dots=${version//"_"/"."}
 
 # make Apps directory
