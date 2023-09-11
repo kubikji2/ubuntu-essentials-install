@@ -4,7 +4,7 @@
 target="$HOME/.Apps"
 name="caprine"
 path=$target"/"$name
-version="2.58.0"
+version="2.58.1"
 fn="Caprine-$version.AppImage"
 fn_template="Caprine-*.AppImage"
 
