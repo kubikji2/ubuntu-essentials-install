@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # variable defining the location for the AppImage
 target="$HOME/.Apps"
