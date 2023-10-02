@@ -31,7 +31,7 @@ script_dir=$(dirname $script_path)
 # copy icon to the .App/ directory
 cp $script_dir/icon.png $path
 
-# creating entry in the menu and enabling adding to favourite
+# creating entry in the menu and enabling adding to sidebar
 echo -e "[Desktop Entry]
 Version=2.4.2
 Type=Application
