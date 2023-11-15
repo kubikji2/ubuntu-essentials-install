@@ -1,0 +1,6 @@
+
+INSTALL_freecad=0
+INSTALL_meshlab=0
+INSTALL_netfabb=1
+INSTALL_openscad=1
+INSTALL_prusaslicer=1
