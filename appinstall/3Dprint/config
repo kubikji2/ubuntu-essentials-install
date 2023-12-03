@@ -1,5 +1,0 @@
-
-INSTALL_freecad=1
-INSTALL_netfabb=0
-INSTALL_openscad=1
-INSTALL_prusaslicer=0

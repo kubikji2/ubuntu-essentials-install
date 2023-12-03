@@ -1,9 +1,10 @@
 
 INSTALL_docker=0
 INSTALL_docker_add_user=0
+INSTALL_dotnet_sdk=0
 INSTALL_jetbrains_toolbox=1
+INSTALL_unityhub=0
+INSTALL_mono=0
 INSTALL_vscode=1
 INSTALL_vscode_kvant_conf=1
-INSTALL_unityhub=0
-INSTALL_dotnet_sdk=0
-INSTALL_mono=0
+
