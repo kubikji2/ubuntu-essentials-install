@@ -4,7 +4,7 @@ target="$HOME/.Apps"
 name="prusaslicer"
 path=$target"/"$name
 # MODIFY THIS UPON NEW RELEASE
-version="2_7_0"
+version="2_7_1"
 version_dots=${version//"_"/"."}
 
 # make Apps directory
@@ -33,7 +33,7 @@ cp $script_dir/icon.png $path
 
 # creating entry in the menu and enabling adding to sidebar
 echo -e "[Desktop Entry]
-Version=2.4.2
+Version=$version
 Type=Application
 Name=PrusaSlicer
 Comment=Slicer by Prusa Research
