@@ -1,4 +1,5 @@
 
+INSTALL_appimagetool=1
 INSTALL_etcher=1
 INSTALL_flameshot=1
 INSTALL_flatpakautoupdate=1
