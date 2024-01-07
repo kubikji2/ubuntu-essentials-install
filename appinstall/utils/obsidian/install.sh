@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
 target="$HOME/.Apps"
-name="prusaslicer"
+name="Obsidian"
 path=$target"/"$name
 # MODIFY THIS UPON NEW RELEASE
-version="2_7_1"
-version_dots=${version//"_"/"."}
+version="1.5.3"
+filename=$name"-"$version".AppImage"
+#version="2_7_1"
+#version_dots=${version//"_"/"."}
+alias_name="obsidian"
 
 # make Apps directory
 mkdir -p $target
@@ -13,15 +16,15 @@ mkdir -p $target
 rm -rf $path
 mkdir -p $path
 # download the appimage
-wget https://cdn.prusa3d.com/downloads/drivers/prusa3d_linux_$version.zip
-# unzip it to
-unzip -j "prusa3d_linux_"$version -d $path
-# make both prusaslicers GTK versions runable
-chmod +x $path/PrusaSlicer*
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v$version/$filename
+# make it runable
+chmod +x $filename
+# copy it to
+cp $filename $path
 # make link to the .local/bin
-ln -fs $path/PrusaSlicer*linux-x64-GTK3*.AppImage "$HOME/.local/bin/"$name
+ln -fs $path/$filename "$HOME/.local/bin/"$alias_name
 # clean up
-rm prusa3d_linux_$version.zip 
+rm $filename 
 
 # adding icon
 # getting script absolute dir path
@@ -35,9 +38,9 @@ cp $script_dir/icon.png $path
 echo -e "[Desktop Entry]
 Version=$version
 Type=Application
-Name=PrusaSlicer
+Name=$name
 Comment=Slicer by Prusa Research
-TryExec=$HOME/.local/bin/$name
-Exec=$HOME/.local/bin/$name
+TryExec=$HOME/.local/bin/$alias_name
+Exec=$HOME/.local/bin/$alias_name
 Icon=$path/icon.png
-Actions=Editor" > $HOME/.local/share/applications/$name.desktop
+Actions=Editor" > $HOME/.local/share/applications/$alias_name.desktop

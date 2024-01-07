@@ -1,4 +1,5 @@
 
+INSTALL_appimagetool=1
 INSTALL_etcher=1
 INSTALL_flameshot=1
 INSTALL_flatpakautoupdate=1
@@ -6,6 +7,7 @@ INSTALL_guake=0
 INSTALL_htop=1
 INSTALL_midnight_commander=1
 INSTALL_net_tools=1
+INSTALL_obsidian=1
 INSTALL_pandoc=1
 INSTALL_pdftk=1
 INSTALL_timeshift=1
