@@ -5,6 +5,6 @@
 # and
 # https://superuser.com/questions/187440/set-default-ubuntu-video-player-as-vlc
 
-sed -i 's/org.gnome.Totem/vlc/g' /usr/share/applications/defaults.list
+sudo sed -i 's/org.gnome.Totem/vlc/g' /usr/share/applications/defaults.list
 
-sed -i 's/org.gnome.Totem/vlc/g' /usr/share/applications/mimeinfo.cache
+sudo sed -i 's/org.gnome.Totem/vlc/g' /usr/share/applications/mimeinfo.cache
