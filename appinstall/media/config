@@ -2,6 +2,7 @@
 INSTALL_blender=0
 INSTALL_gimp=1
 INSTALL_inkscape=1
+INSTALL_kdenlive=1
 INSTALL_obs=0
 INSTALL_spotify=1
 INSTALL_sweethome3d=0
