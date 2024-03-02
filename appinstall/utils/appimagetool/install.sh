@@ -22,7 +22,7 @@ chmod +x $path/appimagetool*
 ln -fs $path/appimagetool-x86_64.AppImage "$HOME/.local/bin/"$name
 
 # install required libs
-sudo apt-get install fuse3
+sudo apt-get install fuse3 -y
 
 
 # adding icon
