@@ -31,8 +31,8 @@ ln -fs $path/$appimage_name "$HOME/.local/bin/"$name
 # https://stackoverflow.com/questions/65349875/where-can-i-find-glibcxx-3-4-29
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
-sudo apt-get install gcc-
-sudo apt-get upgrade libstdc++6
+sudo apt-get install gcc- -y
+sudo apt-get upgrade libstdc++6 -y
 
 # adding icon
 # getting script absolute dir path
