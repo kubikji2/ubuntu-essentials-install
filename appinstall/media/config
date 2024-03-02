@@ -7,4 +7,4 @@ INSTALL_obs=0
 INSTALL_spotify=1
 INSTALL_sweethome3d=0
 INSTALL_vlc=1
-INSTALL_vlc_as_default=1
+INSTALL_vlc_as_default=0
