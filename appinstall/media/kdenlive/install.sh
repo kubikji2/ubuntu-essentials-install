@@ -29,7 +29,7 @@ ln -fs $path/$appimage_name "$HOME/.local/bin/"$name
 # fixing issues with missing: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.XX' not found
 # based on:
 # https://stackoverflow.com/questions/65349875/where-can-i-find-glibcxx-3-4-29
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
 sudo apt-get update
 sudo apt-get install gcc- -y
 sudo apt-get upgrade libstdc++6 -y
