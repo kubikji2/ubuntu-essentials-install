@@ -3,9 +3,6 @@
 target="$HOME/.Apps"
 name="appimagetool"
 path=$target"/"$name
-# MODIFY THIS UPON NEW RELEASE
-#version="2_7_1"
-#version_dots=${version//"_"/"."}
 
 # make Apps directory
 mkdir -p $target
@@ -22,9 +19,10 @@ chmod +x $path/appimagetool*
 ln -fs $path/appimagetool-x86_64.AppImage "$HOME/.local/bin/"$name
 
 # install required libs
-sudo apt-get install fuse3
+sudo apt-get install fuse3 -y
 
 
+# TODO
 # adding icon
 # getting script absolute dir path
 # loosely based on: https://linuxhint.com/absolute-path-script-bash/
