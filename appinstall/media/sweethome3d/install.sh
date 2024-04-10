@@ -30,19 +30,31 @@ ln -sf ~/.Apps/$name/$runfile ~/.local/bin/sweethome3d
 # remove archive
 rm $archivename
 
-# download furniture
-furniture_version=1.9.1
-furniture_archive=furniture-$furniture_version.zip
-furniture_path=~/Documents/$name/furniture-$furniture_version
+exit
 
-# create path for furniture
-mkdir -p $furniture_path
+# furniture libraries
+furniture_libs="Contributions Scopia LucaPresidente KatorLegaz BlendSwap-CC-0 BlendSwap-CC-BY"
 
-# download archive
-wget http://sourceforge.net/projects/sweethome3d/files/SweetHome3D-models/3DModels-$furniture_version/3DModels-Contributions-$furniture_version.zip/download -O $furniture_archive
+# download addintional libraries
+for lib_name in $furniture_libs; do 
+    echo $lib_name
 
-# unzop archive
-unzip -o $furniture_archive -d $furniture_path
+    # download additional furniture
+    furniture_version=1.9.1
+    furniture_archive=furniture-$lib_name-$furniture_version.zip
+    furniture_path=~/Documents/$name/furniture-$lib_name-$furniture_version
 
-# removee archive
-rm $furniture_archive
+    # create path for furniture
+    mkdir -p $furniture_path
+
+    # download archive
+    wget "http://sourceforge.net/projects/sweethome3d/files/SweetHome3D-models/3DModels-$furniture_version/3DModels-$lib_name-$furniture_version.zip/download?use_mirror=netix&use_mirror=netix&r=" -O $furniture_archive
+
+    # unzip archive
+    unzip -o $furniture_archive -d $furniture_path
+
+    # remove archive
+    rm $furniture_archive
+
+done
+
