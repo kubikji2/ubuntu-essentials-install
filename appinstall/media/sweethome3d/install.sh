@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # current version
-version=7.2
+version=7.3
 # variable defining the location for the AppImage
 target="$HOME/.Apps"
 name="SweetHome3D-$version"
