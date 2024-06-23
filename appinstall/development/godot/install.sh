@@ -3,7 +3,7 @@
 target="$HOME/.Apps"
 name="godot"
 # MODIFY THIS UPON NEW RELEASE
-version="4_2_1"
+version="4_2_2"
 version_dots=${version//"_"/"."}
 path=$target"/"$name$version_dots
 filename=Godot_v$version_dots-stable_linux.x86_64
