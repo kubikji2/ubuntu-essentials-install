@@ -4,7 +4,7 @@ target="$HOME/.Apps"
 name="prusaslicer"
 path=$target"/"$name
 # MODIFY THIS UPON NEW RELEASE
-version="2_7_4"
+version="2_8_0"
 version_dots=${version//"_"/"."}
 
 # make Apps directory
@@ -19,7 +19,9 @@ unzip -j "prusa3d_linux_"$version -d $path
 # make both prusaslicers GTK versions runable
 chmod +x $path/PrusaSlicer*
 # make link to the .local/bin
-ln -fs $path/PrusaSlicer*linux-x64-GTK3*.AppImage "$HOME/.local/bin/"$name
+#ln -fs $path/PrusaSlicer*linux-x64-GTK3*.AppImage "$HOME/.local/bin/"$name
+# HOT FIX
+ln -fs $path/PrusaSlicer*linux-x64-GTK3*202406270929.AppImage "$HOME/.local/bin/"$name
 # clean up
 rm prusa3d_linux_$version.zip 
 
