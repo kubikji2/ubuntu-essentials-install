@@ -109,7 +109,7 @@ done
 # '-> based on: https://github.com/xpetresx/linux-setup
 APP_PATH=$(pwd)
 # symlink tmux settings
-rm ~/.tmux.conf
+rm -f ~/.tmux.conf
 ln -s $APP_PATH/conf/tmux.conf ~/.tmux.conf
 
 # enable colors in terminal by uncommenting the particular line in bashrc
