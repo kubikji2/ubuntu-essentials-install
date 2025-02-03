@@ -1,4 +1,5 @@
 
+INSTALL_audacity=0
 INSTALL_blender=0
 INSTALL_gimp=1
 INSTALL_inkscape=1
