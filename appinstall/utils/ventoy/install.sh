@@ -4,9 +4,9 @@
 target="$HOME/.Apps"
 name="ventoy"
 path=$target"/"$name
-version="1.0.94"
+version="1.0.99"
 fn="ventoy-"$version"-linux.tar.gz"
-sup_sript="ventoy-gui.sh"
+sup_script="ventoy-gui.sh"
 
 # getting script absolute dir path
 # loosely based on: https://linuxhint.com/absolute-path-script-bash/
@@ -15,19 +15,21 @@ script_dir=$(dirname $script_path)
 
 # make Apps directory
 mkdir -p $target
+rm -rf $path
 mkdir -p $path
+
 
 # get the AppImage
 wget "https://github.com/ventoy/Ventoy/releases/download/v"$version"/"$fn
-# extract downloaded file to netfabb directory
+# extract downloaded file to target directory
 tar -zxvf $fn --directory $path
 # move files on level higher
-mv $path/*/* $path/
+mv -f $path/*/* $path/
 # copy the ventoy-gui.sh script to 
-cp $script_dir"/"$sup_sript $path
+cp $script_dir"/"$sup_script $path
 
 # create a link to ~/.local/bin 
-ln -fs $path"/"$sup_sript "$HOME/.local/bin/"$name"-gui"
+ln -fs $path"/"$sup_script "$HOME/.local/bin/"$name"-gui"
 # clean up
 rm $fn
 
