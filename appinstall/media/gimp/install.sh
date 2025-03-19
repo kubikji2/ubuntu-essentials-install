@@ -3,7 +3,7 @@
 # add flathub repository
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # add flatpak to environment variables
-XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/kvant/.local/share/flatpak/exports/share"
+XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/$USER/.local/share/flatpak/exports/share"
 
 # install gimp using flatpak
 # NOTE: it is currently recommended way of installing the gimp, see: https://www.gimp.org/downloads/
