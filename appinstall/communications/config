@@ -1,7 +1,9 @@
 
 INSTALL_caprine=0
 INSTALL_discord=0
+INSTALL_element=0
 INSTALL_msteams=0
 INSTALL_slack=0
 INSTALL_telegram=0
+INSTALL_zulip=0
 INSTALL_zoom=0
