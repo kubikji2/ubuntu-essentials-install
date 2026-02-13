@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 
-# based on this tutorial:
-# https://www.jwillikers.com/automate-flatpak-updates-with-systemd
+# Define filenames
+SERVICE_FILE="flatpak-auto-update.service"
+TIMER_FILE="flatpak-auto-update.timer"
 
-# somehow flatpak autoupdates should be enabled on Ubuntu 20.04 and later, but it is not in some instances
+# 3. Copy to system directory
+sudo cp $SERVICE_FILE /etc/systemd/system/
+sudo cp $TIMER_FILE /etc/systemd/system/
 
-# copy service
-sudo cp update-system-flatpaks.service /etc/systemd/system/
-# copy timer
-sudo cp update-system-flatpaks.timer /etc/systemd/system/
-# setup system deamon 
-sudo systemctl --system enable --now update-system-flatpaks.timer
+# 4. Set proper permissions
+sudo chmod 644 /etc/systemd/system/$SERVICE_FILE
+sudo chmod 644 /etc/systemd/system/$TIMER_FILE
+
+# 5. Enable and start the timer
+sudo systemctl daemon-reload
+sudo systemctl enable --now $TIMER_FILE
+
+# 6. Cleanup local temporary files
+# echo "------------------------------------------------------"
+# echo "Flatpak Auto-Update structure installed successfully."
+# echo "Timer status:"
+# systemctl status $TIMER_FILE --no-pager
+# echo "------------------------------------------------------"
