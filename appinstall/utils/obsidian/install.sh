@@ -1,46 +1,20 @@
 #!/usr/bin/env bash
 
-target="$HOME/.Apps"
-name="Obsidian"
-path=$target"/"$name
-# MODIFY THIS UPON NEW RELEASE
-version="1.5.3"
-filename=$name"-"$version".AppImage"
-#version="2_7_1"
-#version_dots=${version//"_"/"."}
-alias_name="obsidian"
+# 1. Add flathub repository (if not already present)
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# make Apps directory
-mkdir -p $target
-# erease possible previous installations
-rm -rf $path
-mkdir -p $path
-# download the appimage
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v$version/$filename
-# make it runable
-chmod +x $filename
-# copy it to
-cp $filename $path
-# make link to the .local/bin
-ln -fs $path/$filename "$HOME/.local/bin/"$alias_name
-# clean up
-rm $filename 
+# 2. Add flatpak to environment variables (for current session)
+export XDG_DATA_DIRS+=":/var/lib/flatpak/exports/share:/home/$USER/.local/share/flatpak/exports/share"
 
-# adding icon
-# getting script absolute dir path
-# loosely based on: https://linuxhint.com/absolute-path-script-bash/
-script_path=$(realpath "${BASH_SOURCE:-$0}")
-script_dir=$(dirname $script_path)
-# copy icon to the .App/ directory
-cp $script_dir/icon.png $path
+# 3. Install Obsidian using Flatpak
+# App ID: md.obsidian.Obsidian
+sudo flatpak install flathub md.obsidian.Obsidian -y
 
-# creating entry in the menu and enabling adding to sidebar
-echo -e "[Desktop Entry]
-Version=$version
-Type=Application
-Name=$name
-Comment=Slicer by Prusa Research
-TryExec=$HOME/.local/bin/$alias_name
-Exec=$HOME/.local/bin/$alias_name
-Icon=$path/icon.png
-Actions=Editor" > $HOME/.local/share/applications/$alias_name.desktop
+# 4. Add entry to ~/.local/bin for terminal access
+# This allows you to just type 'obsidian' in the terminal
+mkdir -p $HOME/.local/bin
+echo "flatpak run md.obsidian.Obsidian" > $HOME"/.local/bin/obsidian"
+chmod +x $HOME"/.local/bin/obsidian"
+
+#echo "Obsidian Flatpak installation complete!"
+#echo "You may need to restart your session for the icon to appear in the app menu."
