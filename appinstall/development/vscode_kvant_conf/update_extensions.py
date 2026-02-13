@@ -1,12 +1,13 @@
-#  merge together tmp_exptention.conf and the vscode-extentions.py
 
+
+#  merge together tmp_exptention.conf and the vscode-extentions.py
 if __name__=="__main__":
 
     new_extentions = []
 
     # try to get new tmp extention.conf
     try:
-        with open("./tmp-extention.conf", 'r') as f:
+        with open("tmp-extensions.conf", 'r') as f:
             new_extentions = f.readlines()
     except FileNotFoundError:
         print("nothing to update.")

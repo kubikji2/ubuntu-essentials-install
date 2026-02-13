@@ -1,4 +1,5 @@
 
+INSTALL_brave=1
 INSTALL_caprine=0
 INSTALL_discord=0
 INSTALL_element=0
